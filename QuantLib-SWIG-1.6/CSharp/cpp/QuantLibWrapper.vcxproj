@@ -117,7 +117,7 @@
     </ClCompile>
     <Link>
       <OutputFile>$(OutDir)NQuantLibc.dll</OutputFile>
-      <AdditionalLibraryDirectories>$(QL_DIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(QL_DIR)\lib\$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(OutDir)QuantlibWrapper.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
@@ -171,7 +171,7 @@
     </ClCompile>
     <Link>
       <OutputFile>$(OutDir)NQuantLibc.dll</OutputFile>
-      <AdditionalLibraryDirectories>$(QL_DIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(QL_DIR)\lib\$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
