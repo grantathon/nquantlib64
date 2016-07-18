@@ -1,0 +1,291 @@
+commit bcc9dc72ea937c9b8c651df70b689c4fd6e6b26e
+Author: Luigi Ballabio <luigi.ballabio@gmail.com>
+Date:   Mon, 4 Apr 2016 15:50:27 +0200
+
+    Update Visual C# projects.
+
+ CSharp/csharp/NQuantLib.csproj     | 13 +++++++++++--
+ CSharp/csharp/NQuantLib_vc8.csproj | 13 +++++++++++--
+ CSharp/csharp/NQuantLib_vc9.csproj | 13 +++++++++++--
+ tools/sync_csharp_projects.sh      | 23 ++++++++++-------------
+ 4 files changed, 43 insertions(+), 19 deletions(-)
+
+commit 87e7752e3e2fe760afd974685d5b97d0ed370d20
+Merge: b82581c d63b022
+Author: Luigi Ballabio <luigi.ballabio@gmail.com>
+Date:   Wed, 30 Mar 2016 12:27:02 +0200
+
+    Merge pull request #15.
+
+commit d63b02255f532704c49a6b00f2e4672674d4b10f
+Author: alexsbromberg <bromberg.alex@gmail.com>
+Date:   Mon, 28 Mar 2016 16:07:02 -0400
+
+    Update scheduler.i
+    
+    The 'until' function isn't exposed by SWIG. Added a line to do that.
+
+ SWIG/scheduler.i | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit b82581c923278669e57eff9633eb059fcdef0ec7
+Merge: 4357cdb cdfcfc3
+Author: Luigi Ballabio <luigi.ballabio@gmail.com>
+Date:   Fri, 25 Mar 2016 10:27:46 +0100
+
+    Merge pull request #13.
+
+commit cdfcfc369e417c406d4f0666e2127774cbfdaa0a
+Author: Gouthaman Balaraman <gouthambs@gmail.com>
+Date:   Fri, 18 Mar 2016 22:23:41 -0700
+
+    CallabilitySchedule datatype change
+
+ SWIG/bonds.i | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 4357cdbbc34f26bf658d427f8923e3cf480c141d
+Author: Luigi Ballabio <luigi.ballabio@gmail.com>
+Date:   Tue, 8 Mar 2016 16:03:48 +0100
+
+    Define __hash__ for Python classes that define __eq__.
+    
+    This is required for them to work correctly as dict keys.
+    
+    Closes #11.
+
+ SWIG/calendars.i   | 6 ++++++
+ SWIG/currencies.i  | 6 ++++++
+ SWIG/date.i        | 6 ++++++
+ SWIG/daycounters.i | 6 ++++++
+ 4 files changed, 24 insertions(+)
+
+commit 144bf3924228a3236f7682807936d303bf9b1494
+Merge: 1e65d3b 15d09b7
+Author: Luigi Ballabio <luigi.ballabio@gmail.com>
+Date:   Thu, 3 Mar 2016 17:39:14 +0100
+
+    Merge pull request #10.
+
+commit 15d09b7fedcc1ad7bfd30e28ae0fff5a2a211ea8
+Author: Luigi Ballabio <luigi.ballabio@gmail.com>
+Date:   Thu, 3 Mar 2016 14:52:44 +0100
+
+    Manage new generated source file.
+
+ .gitignore         | 1 +
+ CSharp/Makefile.am | 7 ++++---
+ 2 files changed, 5 insertions(+), 3 deletions(-)
+
+commit f082330c08fcb16d4e8b49bdfd70d41418c9c707
+Author: Luigi Ballabio <luigi.ballabio@gmail.com>
+Date:   Thu, 3 Mar 2016 14:34:16 +0100
+
+    Collapse identical #elif clauses.
+
+ SWIG/optimizers.i | 21 ++++++---------------
+ 1 file changed, 6 insertions(+), 15 deletions(-)
+
+commit 8b87946a6a6941316088aa3047e594a226541922
+Author: Luigi Ballabio <luigi.ballabio@gmail.com>
+Date:   Thu, 3 Mar 2016 14:33:43 +0100
+
+    Add director support to main module declaration.
+
+ SWIG/functions.i | 3 +--
+ SWIG/quantlib.i  | 2 +-
+ 2 files changed, 2 insertions(+), 3 deletions(-)
+
+commit 0eb11b57adef8ab8c28bffb984bea058e26f5e4e
+Author: david-wolf <david.terk@gmail.com>
+Date:   Wed, 2 Mar 2016 09:46:47 -0500
+
+    Added .NET bindings for Optimizer functionality.
+
+ SWIG/functions.i  | 105 ++++++++++++++++++++++++++++++++++++++++++++++++++++--
+ SWIG/optimizers.i |  23 +++++++++++-
+ 2 files changed, 124 insertions(+), 4 deletions(-)
+
+commit 1e65d3b97276294cd9a428008db134ec554d6795
+Merge: b73a99b fe6fd59
+Author: Luigi Ballabio <luigi.ballabio@gmail.com>
+Date:   Fri, 26 Feb 2016 13:07:49 +0100
+
+    Merge pull request #8.
+
+commit b73a99b9924257281c4efab248e84089c234f4af
+Merge: 1ce3912 93443f8
+Author: Luigi Ballabio <luigi.ballabio@gmail.com>
+Date:   Fri, 26 Feb 2016 12:58:12 +0100
+
+    Merge pull request #6.
+
+commit 1ce3912c9a3bf766d48619388c304593c32896da
+Merge: 05cede5 b14a50c
+Author: Luigi Ballabio <luigi.ballabio@gmail.com>
+Date:   Fri, 26 Feb 2016 12:55:19 +0100
+
+    Merge pull request #4.
+
+commit 05cede5fccbb966b1ebd15f808c503bb8bc7436f
+Merge: 4b232fe 89f441e
+Author: Luigi Ballabio <luigi.ballabio@gmail.com>
+Date:   Fri, 26 Feb 2016 12:25:56 +0100
+
+    Merge pull request #3.
+
+commit 4b232fe35d00113912f3b29bac51686189eb3dfb
+Merge: c428d31 1e0abc8
+Author: Luigi Ballabio <luigi.ballabio@gmail.com>
+Date:   Fri, 26 Feb 2016 12:04:59 +0100
+
+    Merge pull request #2.
+
+commit c428d318319430cef0998d899973930f52f83803
+Author: Luigi Ballabio <luigi.ballabio@gmail.com>
+Date:   Mon, 15 Feb 2016 22:55:51 +0100
+
+    Add part of the old dev_tools module as subfolder.
+
+ tools/sync_csharp_projects.sh | 50 +++++++++++++++++++++++++++++++++++++++++++
+ tools/version_number.txt      | 11 ++++++++++
+ 2 files changed, 61 insertions(+)
+
+commit a72e6a1f3713b0ea70d06ea4eeaedd5d9f9974c4
+Author: Luigi Ballabio <luigi.ballabio@gmail.com>
+Date:   Wed, 27 Jan 2016 16:01:28 +0100
+
+    Export StochasticProcess interface.
+
+ SWIG/stochasticprocess.i | 31 ++++++++++++++++++++-----------
+ 1 file changed, 20 insertions(+), 11 deletions(-)
+
+commit fe6fd59d07f9e6c8e0c9605367e8f694cb478be0
+Author: Ethical Banker <ethical.banker@gmail.com>
+Date:   Tue, 26 Jan 2016 14:47:13 +0000
+
+    Fixed typo.
+
+ Python/Makefile.am | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit ea950c95af600adb6ddf8bbe70c91dc4ae50fdc8
+Author: Ethical Banker <ethical.banker@gmail.com>
+Date:   Fri, 22 Jan 2016 08:17:39 +0000
+
+    Fix to Python Makefile so that same compiler is used as when building QuantLib
+
+ Python/Makefile.am | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 93443f8319e1de1ba5295f9e0f2d4458132bd9e4
+Author: Richard Gomes <rgomes.info@gmail.com>
+Date:   Sat, 9 Jan 2016 13:19:47 +0000
+
+    Support for cross compilation in Java. https://github.com/lballabio/QuantLib-SWIG/issues/5
+
+ Java/Makefile.am | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 1c36512f6d4ad2aa066517ff8a131472cfc81ca4
+Author: Luigi Ballabio <luigi.ballabio@gmail.com>
+Date:   Fri, 8 Jan 2016 10:08:31 +0100
+
+    Revamp README.
+
+ README.md  | 74 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Readme.txt | 66 ++++++++++++++++++++++++++++++++++++++++++++++++++-----
+ 2 files changed, 135 insertions(+), 5 deletions(-)
+
+commit 5465db3bf34bcb0600125322495c2d4c528cffc2
+Author: Luigi Ballabio <luigi.ballabio@gmail.com>
+Date:   Tue, 22 Dec 2015 17:44:30 +0100
+
+    Prevent generation of default constructor.
+
+ SWIG/options.i | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+commit 46a6dc79698e909ca914c172af6c53de12c3f851
+Author: Luigi Ballabio <luigi.ballabio@gmail.com>
+Date:   Tue, 22 Dec 2015 15:05:34 +0100
+
+    Complete the definition of DeltaVolQuote.
+
+ SWIG/options.i | 49 +++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 49 insertions(+)
+
+commit b80ba2b6690ab89f7fea9e178fc1a551315dd96b
+Author: Luigi Ballabio <luigi.ballabio@gmail.com>
+Date:   Thu, 17 Dec 2015 18:29:11 +0100
+
+    Add .gitignore file after splitting.
+
+ .gitignore | 88 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 88 insertions(+)
+
+commit b14a50c380fd5c3171ff0d005253ba7831aa2e69
+Author: Alex Cooper <alex@acooper.org>
+Date:   Sun, 13 Dec 2015 16:05:59 +1100
+
+    Fixes compile error in SWIG/Python that appears on clang/OSX 10.11.1
+    when <valarray> has been included. To build the Python module, I  no
+    longer need to fiddle with libstdc++ as recommended on the web site at
+    http://quantlib.org/install/macosx.shtml.
+
+ SWIG/linearalgebra.i | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+commit 89f441e117e38491b86426661d219be95e47a311
+Author: Gouthaman Balaraman <gouthambs@gmail.com>
+Date:   Fri, 27 Nov 2015 22:29:05 -0800
+
+    Added FixedRateBondForward and BondFunctions::zSpread to SWIG wrapper
+
+ SWIG/bondfunctions.i |  24 +++++++++++
+ SWIG/forward.i       | 116 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ SWIG/ql.i            |   1 +
+ 3 files changed, 141 insertions(+)
+
+commit 1e0abc8fa31b9a5004eb2447ebb7688dfe330c6e
+Author: Prof. Jayanth R Varma <jrvarma@gmail.com>
+Date:   Tue, 24 Nov 2015 18:11:47 +0530
+
+    Expose FD Barrier Engine (no rename)
+    
+    Added SWIG code to expose the FdBlackScholesBarrierEngine to other languages (Python)
+
+ SWIG/options.i | 52 ++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 52 insertions(+)
+
+commit 7b49b5a6b0cd2bca7b5206236ef8d29347074a64
+Author: Luigi Ballabio <luigi.ballabio@gmail.com>
+Date:   Mon, 23 Nov 2015 12:56:28 +0100
+
+    Bump version number to 1.7.1.
+
+ Guile/setup.scm    | 2 +-
+ MzScheme/setup.scm | 2 +-
+ Perl/Makefile.PL   | 2 +-
+ Python/setup.py    | 2 +-
+ R/DESCRIPTION      | 2 +-
+ Ruby/setup.rb      | 2 +-
+ SWIG/ql.i          | 2 +-
+ configure.ac       | 2 +-
+ 8 files changed, 8 insertions(+), 8 deletions(-)
+
+commit ed809777915fb83871d8c6868273297290bb93ba
+Author: Luigi Ballabio <luigi.ballabio@gmail.com>
+Date:   Mon, 23 Nov 2015 13:41:45 +0100
+
+    Bump version number to 1.8.
+
+ Guile/setup.scm    | 2 +-
+ MzScheme/setup.scm | 2 +-
+ Perl/Makefile.PL   | 2 +-
+ Python/setup.py    | 2 +-
+ R/DESCRIPTION      | 2 +-
+ Ruby/setup.rb      | 2 +-
+ SWIG/ql.i          | 2 +-
+ configure.ac       | 2 +-
+ 8 files changed, 8 insertions(+), 8 deletions(-)
