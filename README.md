@@ -24,7 +24,7 @@ These instructions assume you are using Visual Studio 2013 and NuGet Package Exp
 6. Set the **Configuration Manager**->**Active solution platform** to **x64**.
 7. Build the QuantLib project in both **Debug** and **Release** modes.
 8. Close the QuantLib solution.
-9. Add **QL_DIR** to your environmental variables and set it to the QuantLib installation directory (e.g., *C:\QuantLib-1.8*)
+9. Add **QL_DIR** to your environmental variables and set it to the QuantLib directory (e.g., *C:\QuantLib-1.8*)
 10. Run **swig.cmd** in the QuantLib-SWIG C# solution directory.
 11. Open the QuantLib-SWIG C# solution.
 12. In the NQuantLibc project Properties, perform the following settings for Configuration **All Configurations** and Platform **All Platforms**:
