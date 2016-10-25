@@ -77,7 +77,7 @@
    the JVM or .NET eco system or any environment with an
    async garbage collector */
 #ifndef QL_ENABLE_THREAD_SAFE_OBSERVER_PATTERN
-//#    define QL_ENABLE_THREAD_SAFE_OBSERVER_PATTERN
+#    define QL_ENABLE_THREAD_SAFE_OBSERVER_PATTERN
 #endif
 
 /* Define this to enable a date resolution down to microseconds and
