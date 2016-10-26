@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>NQuantLib64</id>
+        <version>1.0.7</version>
+        <title>NQuantLib64</title>
+        <authors>QuantLib (packaged by grantathon)</authors>
+        <owners>grantathon</owners>
+        <licenseUrl>http://quantlib.org/license.shtml</licenseUrl>
+        <projectUrl>http://quantlib.org/index.shtml</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>A free/open-source quantitative finance library written in C++ and connected to C# via SWIG.
+
+Uses QuantLib-1.8 for 64-bit systems.</description>
+    <references>
+        <reference file="NQuantLib.dll" />
+    </references>
+    </metadata>
+    <files>
+        <file src="QuantLib-SWIG\CSharp\csharp\bin\x64\Release\NQuantLib.dll" target="lib" />
+        <file src="QuantLib-SWIG\CSharp\cpp\bin\vc120\x64\Release\NQuantLibc.dll" target="lib" />
+        <file src="NQuantLib64.targets" target="build" />
+    </files>
+</package>
