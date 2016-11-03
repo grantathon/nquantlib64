@@ -26,6 +26,7 @@ These instructions assume you are using Visual Studio 2013 and NuGet Package Exp
 8. Close the QuantLib solution.
 9. Add **QL_DIR** to your environmental variables and set it to the QuantLib directory (e.g., *C:\QuantLib-1.8*)
 10. Run **swig.cmd** in the QuantLib-SWIG C# solution directory.
+	1. The swig.cmd file must point to your locally-installed **swig executable** (e.g., swig.exe for Windows). If you do not have this, you must download and install it from [here](http://www.swig.org/download.html).
 11. Open the QuantLib-SWIG C# solution.
 12. In the NQuantLibc project Properties, perform the following settings for Configuration **All Configurations** and Platform **All Platforms**:
 	1. Set **General**->**Output Directory** to **bin\$(qlCompilerTag)\$(Platform)\$(Configuration)\**.
